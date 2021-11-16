@@ -1,0 +1,21 @@
+<div class ="container">
+    <h3>Users List</h3>
+    <table style = "width:100%;">
+    <tbody>
+      <tr>
+        <th>Id</th>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Actions</th>
+      </tr>
+      <tr *ngFor="let user of userList">
+        <td>{{user.id}}</td>
+        <td><img src = {{user.avatar}}></td>
+        <td>{{user.first_name }} {{user.last_name}}</td>
+        <td>{{user.email}}</td>
+        <td><button (click) = "userClicked(user.id)">View</button>
+         <button (click) = "deleteUser(user.id)">Delete</button></td>
+    </tbody>
+  </table>
+</div>

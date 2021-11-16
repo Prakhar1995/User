@@ -1,0 +1,14 @@
+.toolbar {
+    
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #bd1942;
+    color: white;
+    font-weight: 600;
+  }
+  .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
